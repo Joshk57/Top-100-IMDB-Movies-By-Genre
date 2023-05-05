@@ -1,11 +1,11 @@
-#Background
+<h2>Background</h1>
 
 My project will display the top 10 movies of each genre based on IMDB's ratings 
 and you will be able to view each movie's main actors and a brief synopsis after 
 clicking on each movie. 
 
 
-#Functionality & MVPS
+<h2>Functionality & MVPS</h2>
 
 In (TBD), users will be able to:
 <ul>
@@ -21,16 +21,16 @@ In addition, this project will include:
     <li>A README</li>
 </ul>
 
-#Wireframe
+<h2>Wireframe</h2>
 ![Screenshot 2023-05-04 232217](https://user-images.githubusercontent.com/126521511/236371400-36e5e508-2eca-4e63-b7f2-ec9ddf9e5284.png)
 
-#Technologies, Libraries, APIs
+<h2>Technologies, Libraries, APIs</h2>
 <ul>
     <li>D3.js</li>
     <li>MoviesMiniDatabase API</li>
 </ul>
 
-#Implementation Timeline
+<h2>Implementation Timeline</h2>
 <ul>
     <li>Friday: Get comfortable with pulling data from my API and start pulling the data I need for my project</li>
     <li>Saturday and Sunday: Have all my data by now and then get my genre buttons to work</li> 
