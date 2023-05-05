@@ -15,6 +15,4 @@ In (TBD), users will be able to:
     <li>
 </ul>
 
-Wireframe
-
-https://www.google.com/search?q=movie+genre+icons&rlz=1C1VDKB_enUS1001US1001&oq=movie+genre+icons&aqs=chrome..69i57j0i22i30l8j0i390i650.1890j1j7&sourceid=chrome&ie=UTF-8#imgrc=xCZIGy8QQR3jMM
+![Screenshot 2023-05-04 232217](https://user-images.githubusercontent.com/126521511/236371400-36e5e508-2eca-4e63-b7f2-ec9ddf9e5284.png)
