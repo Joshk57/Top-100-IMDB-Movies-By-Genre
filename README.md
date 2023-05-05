@@ -22,6 +22,7 @@ In addition, this project will include:
 </ul>
 
 <h2>Wireframe</h2>
+
 ![Screenshot 2023-05-04 232217](https://user-images.githubusercontent.com/126521511/236371400-36e5e508-2eca-4e63-b7f2-ec9ddf9e5284.png)
 
 <h2>Technologies, Libraries, APIs</h2>
