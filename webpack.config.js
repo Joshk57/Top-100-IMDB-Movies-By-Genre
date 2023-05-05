@@ -41,6 +41,9 @@ module.exports = (env, argv) => {
   } else {
     config.devtool = 'eval-source-map';
   }
-
+  experiments: {
+    topLevelAwait: true
+  }
   return config;
 }
+
