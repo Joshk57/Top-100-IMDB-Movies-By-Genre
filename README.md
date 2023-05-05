@@ -1,18 +1,41 @@
-Background
+#Background
 
 My project will display the top 10 movies of each genre based on IMDB's ratings 
 and you will be able to view each movie's main actors and a brief synopsis after 
 clicking on each movie. 
 
 
-Functionality & MVPS
+#Functionality & MVPS
 
 In (TBD), users will be able to:
 <ul>
     <li>See a visual representation of each movie's rating through a vertical bar chart</li>
     <li>Click on each bar to view more information about the movie</li>
     <li>Click on the genres on the side menu to view the top 10 movies of other genres</li>
-    <li>
+    <li>See the movies' bars load from 0.0 to their rating at the start of every time you click on a genre</li>
 </ul>
 
+In addition, this project will include:
+<ul>
+    <li>An About modal to describe what this data visualization is showing</li>
+    <li>A README</li>
+</ul>
+
+#Wireframe
 ![Screenshot 2023-05-04 232217](https://user-images.githubusercontent.com/126521511/236371400-36e5e508-2eca-4e63-b7f2-ec9ddf9e5284.png)
+
+#Technologies, Libraries, APIs
+<ul>
+    <li>D3.js</li>
+    <li>MoviesMiniDatabase API</li>
+</ul>
+
+#Implementation Timeline
+<ul>
+    <li>Friday: Get comfortable with pulling data from my API and start pulling the data I need for my project</li>
+    <li>Saturday and Sunday: Have all my data by now and then get my genre buttons to work</li> 
+    <li>Monday: Continue working on my being able to swap between genres and then start implementing my bar graphs<li>
+    <li>Tuesday: Continue implenting my bar graphs for each movie and make my bars interactive. Try to finish bars by Tuesday and try to be able to display the main actors and a brief synposis for each movie</li>
+    <li>Wednesday: Work on trying to make the project aesthetically pleasing</li>
+    <li>Thursday: Finish what I can and then deploy the project on GitHub</li>
+</ul>
