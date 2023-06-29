@@ -1,12 +1,13 @@
 import Example from './scripts/example';
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     fetchActionMovies()
+document.addEventListener('DOMContentLoaded', () => {
+    // fetchActionMovies()
 
-//     const main = document.getElementById('main')
-//     new Example(main)
-// })
+    const main = document.getElementById('main')
+    new Example(main)
+    console.log("Hello World!")
+})
 // console.log(fetchActionMovies()[0])
 
 // async function fetchMovie() {
@@ -28,44 +29,47 @@ import Example from './scripts/example';
 //     }
 //   }
 
-  async function fetchActionMovies() {
-    const urls = [
-      'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0468569/',
-      'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0167260/',
-      'https://moviesminidatabase.p.rapidapi.com/movie/id/tt1375666/', 
-      'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0120737/', 
-      'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0167261/',
-      'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0133093/', 
-      'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0080684/',
-      'https://moviesminidatabase.p.rapidapi.com/movie/id/tt10189514/',
-      'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0076759/',
-      'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0103064/'
+//   async function fetchActionMovies() {
+//     const urls = [
+//       'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0468569/',
+//       'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0167260/',
+//       'https://moviesminidatabase.p.rapidapi.com/movie/id/tt1375666/', 
+//       'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0120737/', 
+//       'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0167261/',
+//       'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0133093/', 
+//       'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0080684/',
+//       'https://moviesminidatabase.p.rapidapi.com/movie/id/tt10189514/',
+//       'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0076759/',
+//       'https://moviesminidatabase.p.rapidapi.com/movie/id/tt0103064/'
 
-    ];
-    const options = {
-      method: 'GET',
-      headers: {
-        'X-RapidAPI-Key': 'acd4d417f3msh22cbb2688691676p165cfcjsn3f566e20b85c',
-        'X-RapidAPI-Host': 'moviesminidatabase.p.rapidapi.com'
-      }
-    };
+//     ];
+//     const options = {
+//       method: 'GET',
+//       headers: {
+//         'X-RapidAPI-Key': 'acd4d417f3msh22cbb2688691676p165cfcjsn3f566e20b85c',
+//         'X-RapidAPI-Host': 'moviesminidatabase.p.rapidapi.com'
+//       }
+//     };
   
-    try {
-      const requests = urls.map(url => fetch(url, options));
-      const responses = await Promise.all(requests);
-      const results = await Promise.all(responses.map(response => response.json()));
+//     try {
+//       const requests = urls.map(url => fetch(url, options));
+//       const responses = await Promise.all(requests);
+//       const results = await Promise.all(responses.map(response => response.json()));
 
-      let hash = {}
+//       let hash = {}
+//       let arr = []
 
-      for (let i = 0; i < 10; i++) {
-        const title = results[i].results.title
-        hash[title] = results[i].results.rating
-      }
-      console.log(hash);
-    } catch (error) {
-      console.error(error);
-    }
-  }
+//       for (let i = 0; i < 10; i++) {
+//         const title = results[i].results.title
+//         arr.push(hash[title] = results[i].results.rating)
+//       }
+
+//       console.log(arr);
+//       console.log(arr[4])
+//     } catch (error) {
+//       console.error(error);
+//     }
+//   }
 
 
 
