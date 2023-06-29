@@ -75,6 +75,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
   
 
+async function fetchActionMovies() {
+    const url = 'https://rapidapi.com';
+    const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': 'acd4d417f3msh22cbb2688691676p165cfcjsn3f566e20b85c',
+        'X-RapidAPI-Host': 'moviesminidatabase.p.rapidapi.com'
+      }
+    };
+  
+    try {
+      const request = urls.map(url => fetch(url, options));
+      const responses = await Promise.all(requests);
+      const results = await Promise.all(responses.map(response => response.json()));
+
+      let hash = {}
+      let arr = []
+
+      for (let i = 0; i < 10; i++) {
+        const title = results[i].results.title
+        arr.push(hash[title] = results[i].results.rating)
+      }
+
+      console.log(arr);
+      console.log(arr[4])
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
 
 
