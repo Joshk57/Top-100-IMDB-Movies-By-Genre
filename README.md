@@ -9,10 +9,10 @@ clicking on each movie.
 
 In (TBD), users will be able to:
 <ul>
-    <li>See a visual representation of each movie's rating through a vertical bar chart</li>
-    <li>Click on each bar to view more information about the movie</li>
+    <li>See a visual representation of each movie's rating through a horizontal bar chart</li>
     <li>Click on the genres on the side menu to view the top 10 movies of other genres</li>
     <li>See the movies' bars load from 0.0 to their rating at the start of every time you click on a genre</li>
+    <li>Click on each bar to view more information about the movie</li>
 </ul>
 
 In addition, this project will include:
@@ -27,16 +27,18 @@ In addition, this project will include:
 
 <h2>Technologies, Libraries, APIs</h2>
 <ul>
-    <li>D3.js</li>
+    <li>D3.js or Chart.js</li>
     <li>MoviesMiniDatabase API</li>
 </ul>
 
 <h2>Implementation Timeline</h2>
 <ul>
-    <li>Friday: Get comfortable with pulling data from my API and start pulling the data I need for my project</li>
+    <li>Thursday: Get comfortable with pulling data from my API and start pulling the data I need for my project
+    <li>Friday: Try to learn about how to use D3.js or Chart.js</li>
     <li>Saturday and Sunday: Have all my data by now and then get my genre buttons to work</li> 
     <li>Monday: Continue working on my being able to swap between genres and then start implementing my bar graphs<li>
-    <li>Tuesday: Continue implenting my bar graphs for each movie and make my bars interactive. Try to finish bars by Tuesday and try to be able to display the main actors and a brief synposis for each movie</li>
+    <li>Tuesday: Continue implenting my bar graphs for each movie and make my bars interactive.
+    </li>
     <li>Wednesday: Work on trying to make the project aesthetically pleasing</li>
     <li>Thursday: Finish what I can and then deploy the project on GitHub</li>
 </ul>
