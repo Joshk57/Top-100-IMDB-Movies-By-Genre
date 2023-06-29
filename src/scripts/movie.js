@@ -1,8 +1,6 @@
 class Movie {
-    constructor(title, genre, director, plot) {
-        this.title = title
-        this.genre = genre
-        this.director = director
-        this.plot = plot
+    constructor(title, rating) {
+        this.title = title;
+        this.rating = rating;
     }
 }
