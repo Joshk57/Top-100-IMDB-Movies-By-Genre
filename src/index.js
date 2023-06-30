@@ -32,13 +32,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const animation = await fetchMovies("Animation")
         createGraph(animation)
     })
-
+    
+    const comedyBtn = document.querySelector("#comedyBtn")
+    comedyBtn.addEventListener("click", async () => {
+        const comedy = await fetchMovies("Comedy")
+        createGraph(comedy)
+    })
+    const crimeBtn = document.querySelector("#crimeBtn")
+    crimeBtn.addEventListener("click", async () => {
+        const crime = await fetchMovies("Crime")
+        createGraph(crime)
+    })
+    
     const fantasyBtn = document.querySelector("#fantasyBtn")
     fantasyBtn.addEventListener("click", async () => {
         const fantasy = await fetchMovies("Fantasy")
         createGraph(fantasy)
     })
-
     const horrorBtn = document.querySelector("#horrorBtn")
     horrorBtn.addEventListener("click", async () => {
         const horror = await fetchMovies("Horror")

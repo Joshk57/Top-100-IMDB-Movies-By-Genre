@@ -75,8 +75,8 @@ export async function createGraph(data) {
 }
 
 function clearGraph() {
-    const message = d3.select("#message")
-    message.remove();
+    // const message = d3.select("#message")
+    // message.remove();
     
     const svg = d3.select('svg');
     svg.remove();
