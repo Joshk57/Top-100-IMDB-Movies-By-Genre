@@ -7,10 +7,10 @@ class Example {
         this.ele.addEventListener('click', this.handleClick)
 
     
-        console.log(this.fetchTest())
-        console.log(this.fetchActionMovies())
-        console.log(this.fetchAdventureMovies())
-        console.log(this.fetchAnimationMovies())
+        // console.log(this.fetchTest())
+        // console.log(this.fetchActionMovies())
+        // console.log(this.fetchAdventureMovies())
+        // console.log(this.fetchAnimationMovies())
     }
 
 

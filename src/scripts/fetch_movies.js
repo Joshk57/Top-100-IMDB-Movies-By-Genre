@@ -25,11 +25,13 @@ export async function fetchMovies(arg) {
             }
             
         })
-
-        console.log(action_data)
+        // console.log(action_data)
+        return action_data 
 
 
     } catch (error) {
         console.error(error);
     }
 }
+
+
