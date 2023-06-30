@@ -1,7 +1,7 @@
 import { fetchMovies } from "./fetch_movies"
 
 export async function createGraph(data) {
-    clearVisual()
+    clearGraph()
     const barHeight = 25;
     const marginTop = 30;
     const marginRight = 0;
@@ -10,9 +10,14 @@ export async function createGraph(data) {
     const width = 928;
     const height = Math.ceil((data.length + 0.1) * barHeight) + marginTop + marginBottom;
 
+    // const x = d3.scaleLinear()
+    //   .domain([0, d3.max(data, d => d.rating)])
+    //   .range([marginLeft, width - marginRight]);
+
     const x = d3.scaleLinear()
-      .domain([0, d3.max(data, d => d.rating)])
+      .domain([0, 10])
       .range([marginLeft, width - marginRight]);
+
 
     const y = d3.scaleBand()
       .domain(d3.sort(data, d => -d.rating).map(d => d.title))
@@ -68,7 +73,8 @@ export async function createGraph(data) {
 
     return svg.node();
 }
-function clearVisual() {
+
+function clearGraph() {
     const message = d3.select("#message")
     message.remove();
     
