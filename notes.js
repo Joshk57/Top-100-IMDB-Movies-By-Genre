@@ -234,3 +234,8 @@ async function fetchActionMovies() {
 
   fetchRatings()
   
+
+
+  const Action = [{"Title": "shaw", "Rating": 5}, {"Title": "batman", "Rating": 6}]
+
+  

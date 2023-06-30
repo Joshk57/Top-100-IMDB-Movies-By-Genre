@@ -6,6 +6,12 @@
   padding: 20px;
 }
 
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 #main {
   color: purple;
 }

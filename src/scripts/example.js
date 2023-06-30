@@ -6,7 +6,11 @@ class Example {
         this.handleClick = this.handleClick.bind(this)
         this.ele.addEventListener('click', this.handleClick)
 
-        console.log(this.fetchAllMovies())
+    
+        console.log(this.fetchTest())
+        console.log(this.fetchActionMovies())
+        console.log(this.fetchAdventureMovies())
+        console.log(this.fetchAnimationMovies())
     }
 
 
@@ -16,9 +20,65 @@ class Example {
 
 
 
+    // async fetchGenres() {
+    //     const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
+    //     const options = {
+    //         method: 'GET',
+    //         headers: {
+    //             'X-RapidAPI-Key': 'acd4d417f3msh22cbb2688691676p165cfcjsn3f566e20b85c',
+    //             'X-RapidAPI-Host': 'imdb-top-100-movies.p.rapidapi.com'
+    //         }
+    //     };
 
+    //     try {
+    //         const response = await fetch(url, options);
+    //         const result = await response.json();
 
-    async fetchAllMovies() {
+    //         let genres = []
+
+    //         result.forEach(ele => {
+    //             if ((ele["genre"].length > 1) && ())
+    //         })
+
+    //         console.log(action_data)
+ 
+
+    //     } catch (error) {
+    //         console.error(error);
+    //     }
+        
+
+    // }
+    async fetchTest() {
+        const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'acd4d417f3msh22cbb2688691676p165cfcjsn3f566e20b85c',
+                'X-RapidAPI-Host': 'imdb-top-100-movies.p.rapidapi.com'
+            }
+        };
+
+        try {
+            const response = await fetch(url, options);
+            const result = await response.json();
+
+            let hash = {}
+            result.forEach(ele => {
+                if (!hash["genre"]) {
+                        hash[ele["genre"]] = [ele["title"]]
+                    } else {
+                        hash[ele["genre"]].push(ele["title"])
+                    }
+                })
+            console.log(hash)
+        } catch (error) {
+            console.error(error);
+        }
+    }
+    
+
+    async fetchMovies(arg) {
         const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
         const options = {
             method: 'GET',
@@ -31,24 +91,132 @@ class Example {
         try {
             const response = await fetch(url, options);
             const result = await response.json();
-            let hash = {}
+            // console.log(result)
+            let action_data = []
+            
 
             result.forEach(ele => {
-                if (!hash[ele["genre"]]) {
-                    hash[ele["genre"]] = [ele["title"]]
-                } else {
-                    hash[ele["genre"]].push(ele["title"])
+                if (ele["genre"].includes(arg)) {
+                    let hash = {}
+                    hash["title"] = ele["title"]
+                    hash["rating"] = ele["rating"]
+                    action_data.push(hash)
                 }
+                
             })
-            console.log(hash)
+
+            console.log(action_data)
+ 
+
         } catch (error) {
             console.error(error);
         }
+        
+
+    }
+
+    async fetchAdventureMovies() {
+        const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'acd4d417f3msh22cbb2688691676p165cfcjsn3f566e20b85c',
+                'X-RapidAPI-Host': 'imdb-top-100-movies.p.rapidapi.com'
+            }
+        };
+    
+        try {
+            const response = await fetch(url, options);
+            const result = await response.json();
+            // console.log(result)
+            let action_data = []
+            
+
+            result.forEach(ele => {
+                if (ele["genre"].includes("Adventure")) {
+                    let hash = {}
+                    hash["title"] = ele["title"]
+                    hash["rating"] = ele["rating"]
+                    action_data.push(hash)
+                }
+                
+            })
+
+            console.log(action_data)
+
+
+ 
+
+        } catch (error) {
+            console.error(error);
+        }
+        
+
+    }
+
+    async fetchAnimationMovies() {
+        const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'acd4d417f3msh22cbb2688691676p165cfcjsn3f566e20b85c',
+                'X-RapidAPI-Host': 'imdb-top-100-movies.p.rapidapi.com'
+            }
+        };
+    
+        try {
+            const response = await fetch(url, options);
+            const result = await response.json();
+            // console.log(result)
+            let action_data = []
+            
+
+            result.forEach(ele => {
+                if (ele["genre"].includes("Animation")) {
+                    let hash = {}
+                    hash["title"] = ele["title"]
+                    hash["rating"] = ele["rating"]
+                    action_data.push(hash)
+                }
+                
+            })
+
+            console.log(action_data)
+
+
+ 
+
+        } catch (error) {
+            console.error(error);
+        }
+        
+
     }
 
 }
 
 export default Example;
+
+
+
+
+// [{genre: [Action, Adventure]}. ]
+// let hash = {}
+// result.forEach(ele => {
+//     if (ele["genre"].length > 1) {
+//         const genres = ele["genre"]
+
+//         genres.forEach(ele => {
+//             if (!hash["genre"]) {
+//                 hash[ele["genre"]] = [ele["title"]]
+//             } else {
+//                 hash[ele["genre"]].push(ele["title"])
+//             }
+//         })
+//     } else {
+//         hash[ele["genre"]] = [ele["title"]]
+//     }
+// })
 
 // async fetchAllMovies() {
 //     const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
