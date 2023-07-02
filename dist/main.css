@@ -82,16 +82,18 @@ input[disabled] {
   color: purple;
 }
 
+html, body {
+  background-color: #8DA399;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 25px;
-  padding: 50px 5px;
-  color: blue;
-  opacity: 0.95;
-  background-size: cover;
-  text-shadow: 2px 2px 5px blue;
+  font-size: 80px;
+  padding: 30px 5px;
+  color: white;
+  text-shadow: 2px 2px 5px black;
 }
 
 #header-gif {
@@ -100,19 +102,39 @@ input[disabled] {
 
 .genres {
   display: block;
-  font-size: 20px;
+  font-size: 30px;
   padding: 10px 5px;
-  color: black;
+  color: white;
+  border-top-left-radius: 15px;
+  position: fixed;
+  top: 200px;
+  left: 100px;
+  width: 500px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#chartContainer {
+  display: block;
+  margin-left: 700px;
 }
 
 .btn {
   display: flex;
   align-items: center;
-  background-color: green;
+  background-color: rgb(11, 74, 46);
   color: white;
   text-align: center;
   justify-content: center;
   font-size: 30px;
   height: 60px;
   width: 300px;
+}
+
+.x-axis-label, .y-axis-label {
+  font-size: 45px;
+  font-weight: bold;
 }
