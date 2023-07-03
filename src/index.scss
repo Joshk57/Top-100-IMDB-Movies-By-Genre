@@ -9,7 +9,8 @@
 }
 html, body {
     // background-color: rgb(24, 23, 22);
-    background-color: #8DA399;
+    // background-color: #8DA399;
+    background-color: rgb(27, 26, 26);
     // background-image: url('https://images.alphacoders.com/530/530505.jpg');
     // background-image: url('https://images6.alphacoders.com/590/590933.jpg');
 }
@@ -20,6 +21,7 @@ html, body {
     justify-content: center;
     position: sticky;
     font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     height: 60px;
     padding: 30px 5px;
     color: white;
@@ -76,7 +78,8 @@ svg {
   
   .genreBtns {
     width: 200px;
-    background-color: #8DA399;
+    // background-color: #8DA399;
+    background-color: rgb(27, 26, 26);
     margin-left: 100px;
     margin-top: 50px;
     color: #fff;
@@ -92,7 +95,8 @@ svg {
   
   #chartContainer {
     flex: 1;
-    background-color: #8DA399;
+    // background-color: #8DA399;
+    background-color: rgb(27, 26, 26);
   }
   
 
@@ -101,7 +105,8 @@ svg {
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 6px;
-    background-color: rgb(11, 74, 46);
+    // background-color: rgb(11, 74, 46);
+    background-color: rgb(78, 77, 77);
     // background-color: black;
     color: white;
     text-align: center;
@@ -110,7 +115,12 @@ svg {
     height: 50px;
     width: 200px;
 }
-
+.btn:hover {
+    background-color: orange;
+}
+.btn:focus {
+    background-color: orange;
+}
 .x-axis-label, .y-axis-label {
     font-size: 45px;
     font-weight: bold;
@@ -120,5 +130,7 @@ svg {
 
 .genreBtns > ul > li {
     font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    
 }
