@@ -52,8 +52,8 @@ export async function createGraph(data) {
     .on("click", async (event, d) => {
       modal.style.display = "block"
       const id = await fetchId(d)
-      movieModal(event)
-      // do i create an element on a new function and then display the info that I want?
+      movieModal(event, id)
+      // do I create an element on a new function and then display the info that I want?
       
       // loadMovieDescription(id)
     });
