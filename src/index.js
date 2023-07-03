@@ -2,7 +2,7 @@
 // import ActionMovies from "./scripts/action_movies"
 import { fetchMovies } from "./scripts/fetch_movies"
 import {createGraph} from "./scripts/create_graph"
-
+import { fetchId } from "./scripts/fetch_id"
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const actionBtn = document.querySelector("#actionBtn")
     actionBtn.addEventListener("click", async () => {
         const action = await fetchMovies("Action")
+        // const id = await fetchID()
         createGraph(action)
     })
 
