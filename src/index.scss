@@ -32,43 +32,69 @@ html, body {
 #header-gif {
     display: none;
 }
-.genreBtns {
-    width: 200px;
-    position: absolute;
-}
 
 
-.genres {
-    display: block;
-    // float: left;
-    // flex: 30%;
-    font-size: 30px;
-    padding: 10px 5px;
-    color: white;
-    border-top-left-radius: 15px;
-    position: fixed;
-    top: 110px;
-    left: 100px;
-    width: 200px;
 
-}
 
 svg {
     // margin-left: 500px;
     position: relative;
 }
-.container {
+// .container {
+//     display: flex;
+//     // flex: 70%;
+//     // flex-wrap: wrap;
+//     margin-left: 350px;
+// }
+// .genreBtns {
+//     width: 200px;
+//     position: absolute;
+// }
+
+// .genres {
+//     display: block;
+//     // float: left;
+//     // flex: 30%;
+//     font-size: 30px;
+//     padding: 10px 5px;
+//     color: white;
+//     border-top-left-radius: 15px;
+//     position: fixed;
+//     top: 110px;
+//     left: 100px;
+//     width: 200px;
+
+// }
+// #chartContainer {
+//     display: block ;
+//     margin-left: 350px;
+// }
+#container {
     display: flex;
-    // flex: 70%;
-    // flex-wrap: wrap;
-    margin-left: 350px;
-}
-
-#chartContainer {
-    display: block ;
-    margin-left: 350px;
-}
-
+    height: 100vh;
+  }
+  
+  .genreBtns {
+    width: 200px;
+    background-color: #8DA399;
+    margin-left: 100px;
+    margin-top: 50px;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .genres {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  #chartContainer {
+    flex: 1;
+    background-color: #8DA399;
+  }
+  
 
 .btn {
     display: flex;
@@ -82,7 +108,7 @@ svg {
     justify-content: center;
     font-size: 20px;
     height: 50px;
-    width: 180px;
+    width: 200px;
 }
 
 .x-axis-label, .y-axis-label {
@@ -90,3 +116,9 @@ svg {
     font-weight: bold;
   }
 
+
+
+.genreBtns > ul > li {
+    font-size: 50px;
+    text-align: center;
+}
