@@ -134,7 +134,11 @@ export async function createGraph(data) {
     .attr("x", x(0))
     .attr("y", (d) => y(d.title))
     .attr("width", (d) => x(d.rating) - x(0))
-    .attr("height", y.bandwidth());
+    .attr("height", y.bandwidth())
+    .on("click", (event, d) => {
+      // Handle click event
+      loadMovieDescription(d.title);
+    });
 
   svg.append("g")
     .attr("fill", "white")
@@ -147,7 +151,7 @@ export async function createGraph(data) {
     .attr("dy", "0.35em")
     .attr("dx", -4)
     .text((d) => format(d.rating))
-    .call((text) => text.filter(d => x(d.rating) - x(0) < 20) // short bars
+    .call((text) => text.filter(d => x(d.rating) - x(0) < 20) 
       .attr("dx", +4)
       .attr("fill", "black")
       .attr("text-anchor", "start"));
@@ -156,17 +160,17 @@ export async function createGraph(data) {
     .attr("transform", `translate(0,${marginTop})`)
     .call(d3.axisTop(x).ticks(width / 80, ""))
     .call(g => g.select(".domain").remove())
-    .selectAll("text") // Select all the tick labels
-    .style("font-size", "18px") // Set the font size
-    .style("fill", "white"); // Set the font color
+    .selectAll("text") 
+    .style("font-size", "18px")
+    .style("fill", "white"); 
 
 
   svg.append("g")
     .attr("transform", `translate(${marginLeft},0)`)
     .call(d3.axisLeft(y).tickSizeOuter(0))
-    .selectAll("text") // Select all the tick labels
-    .style("font-size", "18px") // Set the font size
-    .style("fill", "white"); // Set the font color
+    .selectAll("text") 
+    .style("font-size", "18px") 
+    .style("fill", "white"); 
 
   svg.append("text")
     .attr("class", "x-axis-label")

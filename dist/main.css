@@ -136,6 +136,7 @@ svg {
 .btn {
   display: flex;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
   border-radius: 6px;
   background-color: rgb(11, 74, 46);
   color: white;
