@@ -1,5 +1,5 @@
 import { fetchMovies } from "./fetch_movies"
-
+import { loadMovieDescription } from "./movie_description";
 // export async function createGraph(data) {
 //     clearGraph()
 //     const barHeight = 35;
