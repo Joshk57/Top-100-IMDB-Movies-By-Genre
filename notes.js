@@ -378,7 +378,8 @@ export async function createGraph(data) {
     .on("click", (event, d) => {
         // Handle click event
         loadMovieDescription(d.title);
-      });
+      }); 
+      
 
   svg.append("g")
     .attr("fill", "white")
