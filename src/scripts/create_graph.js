@@ -135,10 +135,10 @@ export async function createGraph(data) {
     .attr("y", (d) => y(d.title))
     .attr("width", (d) => x(d.rating) - x(0))
     .attr("height", y.bandwidth())
-    .on("click", (event, d) => {
-      // Handle click event
-      loadMovieDescription(d.title);
-    });
+    // .on("click", (event, d) => {
+    //   // Handle click event
+    //   loadMovieDescription(d.title);
+    // });
 
   svg.append("g")
     .attr("fill", "white")
