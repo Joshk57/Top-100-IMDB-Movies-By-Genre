@@ -166,6 +166,10 @@ svg {
   text-align: center;
 }
 
+g:hover {
+  background-color: orange;
+}
+
 #myGithub {
   position: fixed;
   bottom: 0px;

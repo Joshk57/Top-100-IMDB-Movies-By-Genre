@@ -76,7 +76,7 @@ svg {
     height: 100vh;
   }
   
-  .genreBtns {
+.genreBtns {
     width: 200px;
     // background-color: #8DA399;
     background-color: rgb(27, 26, 26);
@@ -84,20 +84,20 @@ svg {
     margin-top: 50px;
     color: #fff;
     padding: 10px;
-  }
+}
   
-  .genres {
+.genres {
     list-style-type: none;
     padding: 0;
     margin: 0;
     font-size: 20px;
-  }
+}
   
-  #chartContainer {
+#chartContainer {
     flex: 1;
     // background-color: #8DA399;
     background-color: rgb(27, 26, 26);
-  }
+}
   
 
 .btn {
@@ -124,7 +124,7 @@ svg {
 .x-axis-label, .y-axis-label {
     font-size: 45px;
     font-weight: bold;
-  }
+}
 
 
 
@@ -133,6 +133,10 @@ svg {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     
+}
+
+g:hover {
+    background-color: orange;
 }
 
 #myGithub {

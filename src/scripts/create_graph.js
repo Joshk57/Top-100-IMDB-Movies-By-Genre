@@ -135,6 +135,12 @@ export async function createGraph(data) {
     .attr("y", (d) => y(d.title))
     .attr("width", (d) => x(d.rating) - x(0))
     .attr("height", y.bandwidth())
+    // .on("mouseover", function() {
+    //   d3.select(this).classed("hover", true);
+    // })
+    // .on("mouseout", function() {
+    //   d3.select(this).classed("hover", false);
+    // });
     // .on("click", (event, d) => {
     //   // Handle click event
     //   loadMovieDescription(d.title);
@@ -179,6 +185,7 @@ export async function createGraph(data) {
     .attr("y", height - marginBottom / 2)
     .text(xAxisLabel)
     .style("font-size", "16")
+
 
     
 }
