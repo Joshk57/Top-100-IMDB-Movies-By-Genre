@@ -2,6 +2,7 @@ import { fetchMovies } from "./fetch_movies"
 import { loadMovieDescription } from "./movie_description";
 import { fetchId } from "./fetch_id";
 import { movieModal } from "./modal";
+import { closeModal } from "./modal";
 
 export async function createGraph(data) {
   clearGraph();
@@ -38,6 +39,7 @@ export async function createGraph(data) {
 
   const modal = document.getElementById("myModal")
   const span = document.getElementsByClassName("close")[0]
+
   svg.append("g")
     .attr("fill", "teal")
     .selectAll()
@@ -50,12 +52,19 @@ export async function createGraph(data) {
     .on("click", async (event, d) => {
       modal.style.display = "block"
       const id = await fetchId(d)
-      // movieModal(event)
+      movieModal(event)
+      // do i create an element on a new function and then display the info that I want?
+      
       // loadMovieDescription(id)
     });
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
   span.onclick = function() {
     modal.style.display = "none";
-  };
+  }
 
   svg.append("g")
     .attr("fill", "white")
@@ -97,9 +106,8 @@ export async function createGraph(data) {
     .text(xAxisLabel)
     .style("font-size", "16")
 
-
-    
 }
+
 function clearGraph() {
     // const message = d3.select("#message")
     // message.remove();
