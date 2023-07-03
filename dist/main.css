@@ -91,7 +91,7 @@ html, body {
   align-items: center;
   justify-content: center;
   position: sticky;
-  font-size: 80px;
+  font-size: 60px;
   height: 60px;
   padding: 30px 5px;
   color: white;
@@ -102,6 +102,11 @@ html, body {
   display: none;
 }
 
+.genreBtns {
+  width: 200px;
+  position: absolute;
+}
+
 .genres {
   display: block;
   font-size: 30px;
@@ -110,30 +115,35 @@ html, body {
   border-top-left-radius: 15px;
   position: fixed;
   top: 110px;
-  left: 130px;
-  width: 500px;
+  left: 100px;
+  width: 200px;
+}
+
+svg {
+  position: relative;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap;
+  margin-left: 350px;
 }
 
 #chartContainer {
   display: block;
-  margin-left: 700px;
+  margin-left: 350px;
 }
 
 .btn {
   display: flex;
   align-items: center;
+  border-radius: 6px;
   background-color: rgb(11, 74, 46);
   color: white;
   text-align: center;
   justify-content: center;
-  font-size: 27px;
-  height: 55px;
-  width: 270px;
+  font-size: 20px;
+  height: 50px;
+  width: 180px;
 }
 
 .x-axis-label, .y-axis-label {
