@@ -1,23 +1,19 @@
 <h2>Background</h1>
 
-My project will display the top 10 movies of each genre based on IMDB's ratings 
-and you will be able to view each movie's main actors and a brief synopsis after 
-clicking on each movie. 
-
+My project will display the top 100 IMDB movies categorized by their genre. In each genre, a bar graph will display the ratings of each movie of that genre and the user will be able to click on a movie to learn more about that movie.
 
 <h2>Functionality & MVPS</h2>
 
-In (TBD), users will be able to:
+In Top 100 Movies By Genre, users will be able to:
 <ul>
     <li>See a visual representation of each movie's rating through a horizontal bar chart</li>
-    <li>Click on the genres on the side menu to view the top 10 movies of other genres</li>
-    <li>See the movies' bars load from 0.0 to their rating at the start of every time you click on a genre</li>
-    <li>Click on each bar to view more information about the movie</li>
+    <li>Click on the genres on the side menu to view the ratings of each movie</li>
+    <li>Click on each bar to view a modal that provides more information about that movie</li>
 </ul>
 
 In addition, this project will include:
 <ul>
-    <li>An About modal to describe what this data visualization is showing</li>
+    <li>My GitHub link</li>
     <li>A README</li>
 </ul>
 
@@ -27,8 +23,8 @@ In addition, this project will include:
 
 <h2>Technologies, Libraries, APIs</h2>
 <ul>
-    <li>D3.js or Chart.js</li>
-    <li>MoviesMiniDatabase API</li>
+    <li>D3.js</li>
+    <li>https://rapidapi.com/rapihub-rapihub-default/api/imdb-top-100-movies</li>
 </ul>
 
 <h2>Implementation Timeline</h2>
@@ -42,3 +38,10 @@ In addition, this project will include:
     <li>Wednesday: Work on trying to make the project aesthetically pleasing</li>
     <li>Thursday: Finish what I can and then deploy the project on GitHub</li>
 </ul>
+
+<h2>Future Implementations</h2>
+<ul>
+    <li>Possibly include a search function</li>
+    <li>Provide a trailer to the movies in the modal</li>
+    <li>Provide links to streaming services where the user can watch that movie</li>
+<ul>
