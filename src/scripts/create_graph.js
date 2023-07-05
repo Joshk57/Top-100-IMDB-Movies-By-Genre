@@ -53,7 +53,14 @@ export async function createGraph(data) {
       modal.style.display = "block"
       const id = await fetchInfo(d)
       movieModal(event, id)
+    })
+    .on('mouseover', function() {
+      d3.select(this).style('fill', 'orange');
+    })
+    .on('mouseout', function() {
+      d3.select(this).style('fill', 'teal');
     });
+
   window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
@@ -106,9 +113,7 @@ export async function createGraph(data) {
 }
 
 function clearGraph() {
-    // const message = d3.select("#message")
-    // message.remove();
-    
     const svg = d3.select('svg');
     svg.remove();
 }
+

@@ -1,9 +1,5 @@
 html, body {
-    // background-color: rgb(24, 23, 22);
-    // background-color: #8DA399;
     background-color: rgb(27, 26, 26);
-    // background-image: url('https://images.alphacoders.com/530/530505.jpg');
-    // background-image: url('https://images6.alphacoders.com/590/590933.jpg');
 }
 
 .header {
@@ -16,9 +12,6 @@ html, body {
     height: 60px;
     padding: 30px 5px;
     color: white;
-    // background-image: url('https://images2.alphacoders.com/605/605933.jpg');
-    // background-image: url('https://static.amazon.jobs/teams/53/images/IMDb_Header_Page.jpg?1501027252');
-    // background-size: cover;
     text-shadow: 2px 2px 5px black; 
 }
 
@@ -33,7 +26,6 @@ html, body {
   
 .genreBtns {
     width: 200px;
-    // background-color: #8DA399;
     background-color: rgb(27, 26, 26);
     margin-left: 100px;
     margin-top: 50px;
@@ -122,7 +114,8 @@ g:hover {
   }
 
 .modal-content {
-    background-color: #fefefe;
+    // background-color: #e5dfdf;
+    background-color: rgb(46, 43, 43);
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
@@ -149,6 +142,7 @@ g:hover {
 .modal-content .modal-details li {
     font-family: Arial, sans-serif;
     font-size: 20px;
+    color: white;
     line-height: 1.5;
     margin-bottom: 0px;
     // background-color: rgb(11, 10, 10);
@@ -186,4 +180,11 @@ footer {
     position: absolute;
     right: 0px;
     top: 0px;
+}
+
+#imdbLogo {
+    width: 110px;
+    height: 60px;
+    margin-top: 25px;
+    object-position: center top;
 }

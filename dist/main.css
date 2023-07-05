@@ -185,7 +185,7 @@ g:hover {
 }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: rgb(46, 43, 43);
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
@@ -211,6 +211,7 @@ g:hover {
 .modal-content .modal-details li {
   font-family: Arial, sans-serif;
   font-size: 20px;
+  color: white;
   line-height: 1.5;
   margin-bottom: 0px;
   font-family: Arial, Helvetica, sans-serif;
@@ -238,6 +239,13 @@ footer {
   position: absolute;
   right: 0px;
   top: 0px;
+}
+
+#imdbLogo {
+  width: 110px;
+  height: 60px;
+  margin-top: 25px;
+  object-position: center top;
 }
 
 #main {
