@@ -11,9 +11,16 @@ export function movieModal(event, data) {
   
     const detailsList = document.createElement('ul');
   
+    const titleText = document.createElement('span')
+    titleText.textContent = 'Title'
+    titleText.style.color = 'blue'
+
+    const yearText = document.createElement('span')
+    yearText.textContent = 'Year'
+
     const imageItem = createListItem('Image', '', data[0]);
-    const titleItem = createListItem('Title', data[1]);
-    const yearItem = createListItem('Year', data[2]);
+    const titleItem = createListItem(titleText.textContent, data[1]);
+    const yearItem = createListItem(yearText.textContent, data[2]);
     const ratingItem = createListItem('Rating', data[3]);
     const descriptionItem = createListItem('Description', data[4]);
 
@@ -26,7 +33,7 @@ export function movieModal(event, data) {
     movieDetails.appendChild(detailsList);
   }
   
-  function createListItem(label, value, imageURL) {
+function createListItem(label, value, imageURL) {
     const listItem = document.createElement('li');
     const labelElement = document.createElement('span');
     const valueElement = document.createElement('span');
@@ -41,7 +48,7 @@ export function movieModal(event, data) {
     listItem.appendChild(imageElement);
 
     return listItem;
-  }
+}
   
 export function closeModal(event) {
     const modal = document.querySelector(".modal");
