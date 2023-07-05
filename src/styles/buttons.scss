@@ -26,42 +26,6 @@ html, body {
     display: none;
 }
 
-
-
-
-svg {
-    // margin-left: 500px;
-    position: relative;
-}
-// .container {
-//     display: flex;
-//     // flex: 70%;
-//     // flex-wrap: wrap;
-//     margin-left: 350px;
-// }
-// .genreBtns {
-//     width: 200px;
-//     position: absolute;
-// }
-
-// .genres {
-//     display: block;
-//     // float: left;
-//     // flex: 30%;
-//     font-size: 30px;
-//     padding: 10px 5px;
-//     color: white;
-//     border-top-left-radius: 15px;
-//     position: fixed;
-//     top: 110px;
-//     left: 100px;
-//     width: 200px;
-
-// }
-// #chartContainer {
-//     display: block ;
-//     margin-left: 350px;
-// }
 #container {
     display: flex;
     height: 100vh;
@@ -89,16 +53,13 @@ svg {
     // background-color: #8DA399;
     background-color: rgb(27, 26, 26);
 }
-  
 
 .btn {
     display: flex;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 6px;
-    // background-color: rgb(11, 74, 46);
     background-color: rgb(78, 77, 77);
-    // background-color: black;
     color: white;
     text-align: center;
     justify-content: center;
@@ -107,13 +68,18 @@ svg {
     width: 200px;
 }
 .btn:hover {
-    background-color: orange;
+    background-color: orange !important;
 }
 .btn:focus {
-    background-color: orange;
+    background-color: orange !important;
 
 }
-
+.btn:visited {
+    background-color: orange !important;
+}
+.btn:active {
+    background-color: orange !important;
+}
 .x-axis-label, .y-axis-label {
     font-size: 45px;
     font-weight: bold;
@@ -161,9 +127,9 @@ g:hover {
     padding: 20px;
     border: 1px solid #888;
     width: 60%;
-    margin-top: 100px;
+    margin-top: -60px;
     border-radius: 8px;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
 }
   
 
