@@ -25,6 +25,8 @@ export async function createGraph(data) {
     .rangeRound([marginTop, height - marginBottom])
     .padding(0.1);
 
+  
+
   const format = x.tickFormat(20, "");
 
   const svg = d3.create("svg")
