@@ -198,8 +198,9 @@ g:hover {
   padding: 20px;
   border: 1px solid #888;
   width: 60%;
-  margin-top: 200px;
+  margin-top: 100px;
   border-radius: 8px;
+  margin-bottom: 300px;
 }
 
 .close {
@@ -211,15 +212,23 @@ g:hover {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: black;
   text-decoration: none;
   cursor: pointer;
 }
 
 .modal-content .modal-details li {
   font-family: Arial, sans-serif;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 1.5;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  text-align: bottom;
+  color: white;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 200px;
 }

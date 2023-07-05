@@ -120,7 +120,9 @@ svg {
 }
 .btn:focus {
     background-color: orange;
+
 }
+
 .x-axis-label, .y-axis-label {
     font-size: 45px;
     font-weight: bold;
@@ -167,8 +169,9 @@ g:hover {
     padding: 20px;
     border: 1px solid #888;
     width: 60%;
-    margin-top: 200px;
+    margin-top: 100px;
     border-radius: 8px;
+    margin-bottom: 300px;
   }
   
 
@@ -181,20 +184,32 @@ g:hover {
   
   .close:hover,
   .close:focus {
-    color: #000;
+    color: black;
     text-decoration: none;
     cursor: pointer;
   }
 
   .modal-content .modal-details li {
     font-family: Arial, sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 1.5;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     // background-color: rgb(11, 10, 10);
     font-family: Arial, Helvetica, sans-serif;
     // color: white;
   }
 
 
-  
+  footer {
+    // position: fixed;
+    // padding: 3px;
+    // left: 0px;
+    // bottom: 0px;
+    // display: absolute;
+    text-align: bottom;
+    color: white;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 200px;
+    // display: block;
+  }

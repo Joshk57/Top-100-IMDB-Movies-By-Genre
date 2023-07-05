@@ -48,6 +48,7 @@ export async function createGraph(data) {
     .attr("y", (d) => y(d.title))
     .attr("width", (d) => x(d.rating) - x(0))
     .attr("height", y.bandwidth())
+    .style("cursor", "pointer")
     .on("click", async (event, d) => {
       modal.style.display = "block"
       const id = await fetchInfo(d)
