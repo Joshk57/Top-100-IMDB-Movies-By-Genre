@@ -4,7 +4,7 @@ My project will display the top 100 IMDB movies categorized by their genre. In e
 
 <h2>Functionality & MVPS</h2>
 
-In Top 100 Movies By Genre, users will be able to:
+In "Top 100 Movies By Genre", users will be able to:
 <ul>
     <li>See a visual representation of each movie's rating through a horizontal bar chart</li>
     <li>Click on the genres on the side menu to view the ratings of each movie</li>

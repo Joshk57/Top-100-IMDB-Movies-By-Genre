@@ -1,10 +1,7 @@
 import { fetchMovies } from "./scripts/fetch_movies"
 import {createGraph} from "./scripts/create_graph"
-import { changeColor } from "./scripts/change_color"
 
 document.addEventListener('DOMContentLoaded', () => {
-
-    const main = document.getElementById('main')
 
     const actionBtn = document.querySelector("#actionBtn")
     actionBtn.addEventListener("click", async () => {

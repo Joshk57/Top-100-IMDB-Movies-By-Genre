@@ -42,7 +42,6 @@ html, body {
   
 #chartContainer {
     flex: 1;
-    // background-color: #8DA399;
     background-color: rgb(27, 26, 26);
 }
 
@@ -77,14 +76,11 @@ html, body {
     font-weight: bold;
 }
 
-
-
 .genreBtns > ul > li {
     font-size: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     margin-bottom: 10px;
-    
 }
 
 g:hover {
@@ -92,39 +88,9 @@ g:hover {
 }
 
 .topnav  {
-    // position: fixed;
-    // bottom: 0px;
-    // left: 0px;
     width: 90px;
     height: 90px
 }
-
-.modal {
-    display: none;
-    position: fixed; 
-    z-index: 1;
-    padding-top: 100px; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4); 
-  }
-
-.modal-content {
-    // background-color: #e5dfdf;
-    background-color: rgb(46, 43, 43);
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 60%;
-    margin-top: -60px;
-    border-radius: 8px;
-    margin-bottom: 200px;
-}
-  
 
 .close {
     color: #aaaaaa;
@@ -139,30 +105,12 @@ g:hover {
     cursor: pointer;
 }
 
-.modal-content .modal-details li {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    color: white;
-    line-height: 1.5;
-    margin-bottom: 0px;
-    // background-color: rgb(11, 10, 10);
-    font-family: Arial, Helvetica, sans-serif;
-    // color: white;
-}
-
-
 footer {
-    // position: fixed;
-    // padding: 3px;
-    // left: 0px;
-    // bottom: 0px;
-    // display: absolute;
     text-align: bottom;
     color: white;
     height: 100px;
     width: 100%;
     margin-bottom: 200px;
-    // display: block;
 }
 
 .instructions {
@@ -173,7 +121,6 @@ footer {
     color: white;
     margin-top: 5px;
 }
-
 
 #myGithub {
     width: 90px;

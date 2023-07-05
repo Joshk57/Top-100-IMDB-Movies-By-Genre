@@ -1,7 +1,5 @@
-import { fetchMovies } from "./fetch_movies"
 import { fetchInfo } from "./fetch_info";
 import { movieModal } from "./modal";
-import { closeModal } from "./modal";
 
 export async function createGraph(data) {
   clearGraph();
