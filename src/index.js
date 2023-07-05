@@ -2,7 +2,7 @@
 // import ActionMovies from "./scripts/action_movies"
 import { fetchMovies } from "./scripts/fetch_movies"
 import {createGraph} from "./scripts/create_graph"
-import { fetchId } from "./scripts/fetch_id"
+import { fetchInfo } from "./scripts/fetch_info"
 
 document.addEventListener('DOMContentLoaded', () => {
 

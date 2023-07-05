@@ -1,6 +1,5 @@
 import { fetchMovies } from "./fetch_movies"
-import { loadMovieDescription } from "./movie_description";
-import { fetchId } from "./fetch_id";
+import { fetchInfo } from "./fetch_info";
 import { movieModal } from "./modal";
 import { closeModal } from "./modal";
 
@@ -51,11 +50,8 @@ export async function createGraph(data) {
     .attr("height", y.bandwidth())
     .on("click", async (event, d) => {
       modal.style.display = "block"
-      const id = await fetchId(d)
+      const id = await fetchInfo(d)
       movieModal(event, id)
-      // do I create an element on a new function and then display the info that I want?
-      
-      // loadMovieDescription(id)
     });
     window.onclick = function(event) {
       if (event.target == modal) {

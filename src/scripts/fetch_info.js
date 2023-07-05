@@ -1,6 +1,6 @@
 
 
-export async function fetchId(data) {
+export async function fetchInfo(data) {
     const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
     const options = {
         method: 'GET',
