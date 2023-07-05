@@ -6,7 +6,7 @@ import { closeModal } from "./modal";
 export async function createGraph(data) {
   clearGraph();
   const barHeight = 35;
-  const marginTop = 100;
+  const marginTop = 130;
   const marginRight = 0;
   const marginBottom = 200;
   const marginLeft = 600;
