@@ -1,5 +1,3 @@
-// import Example from './scripts/example';
-// import ActionMovies from "./scripts/action_movies"
 import { fetchMovies } from "./scripts/fetch_movies"
 import {createGraph} from "./scripts/create_graph"
 import { fetchInfo } from "./scripts/fetch_info"
