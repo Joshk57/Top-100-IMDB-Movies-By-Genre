@@ -22,7 +22,10 @@ export function movieModal(event, data) {
     const rating = createListItem('Rating', data[3]);
     detailsList.appendChild(rating);
 
-    const description = createListItem('Description', data[4]);
+    const director = createListItem('Director', data[4]);
+    detailsList.appendChild(director);
+
+    const description = createListItem('Description', data[5]);
     detailsList.appendChild(description);
 
     movieDetails.appendChild(detailsList);
