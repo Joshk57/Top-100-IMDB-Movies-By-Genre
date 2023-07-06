@@ -1,6 +1,6 @@
 <h2>Background</h1>
 
-Top 100 IMDB Movies By Genre is a data visualization of the top 100 IMDB movies categorized by their genre and then sorted by their rating. Users can click on a specific genre to view a horizontal bar chart that shows the movie's title and their rating. Users will also be able to click on a movie's bar rating to learn more about that movie.
+<a href="https://joshk57.github.io/Top-100-IMDB-Movies-By-Genre/">Top 100 IMDB Movies By Genre</a> is a data visualization of the top 100 IMDB movies categorized by their genre and then sorted by their rating. Users can click on a specific genre to view a horizontal bar chart that shows the movie's title and their rating. Users will also be able to click on a movie's bar rating to learn more about that movie.
 
 The motivating factor for this data visualization is because I'm an avid movie enjoyer and whenever I look for a movie to watch, I would always try to find the highest rated movies to watch. I figured why not just create a ranking of the top movies of my own and then be able to see what each movie is about when I click on the movie.
 
