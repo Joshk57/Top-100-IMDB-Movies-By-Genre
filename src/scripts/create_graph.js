@@ -5,7 +5,7 @@ export async function createGraph(data) {
   clearGraph();
   const barHeight = 35;
   const marginTop = 130;
-  const marginRight = 0;
+  const marginRight = 10;
   const marginBottom = 200;
   const marginLeft = 600;
   const width = 1100;
@@ -23,9 +23,7 @@ export async function createGraph(data) {
     .rangeRound([marginTop, height - marginBottom])
     .padding(0.1);
 
-  
-
-  const format = x.tickFormat(20, "");
+  const format = x.tickFormat(20, ".1f");
 
   const svg = d3.create("svg")
     .attr("width", width)
@@ -87,13 +85,12 @@ export async function createGraph(data) {
       .attr("text-anchor", "start"));
 
   svg.append("g")
-    .attr("transform", `translate(0,${marginTop})`)
-    .call(d3.axisTop(x).ticks(width / 80, ""))
-    .call(g => g.select(".domain").remove())
-    .selectAll("text") 
-    .style("font-size", "18px")
-    .style("fill", "white"); 
-
+  .attr("transform", `translate(0,${marginTop})`)
+  .call(d3.axisTop(x).ticks(width / 80, ".0f")) // Format the tick values with no decimal places
+  .call(g => g.select(".domain").remove())
+  .selectAll("text")
+  .style("font-size", "18px")
+  .style("fill", "white");
 
   svg.append("g")
     .attr("transform", `translate(${marginLeft},0)`)

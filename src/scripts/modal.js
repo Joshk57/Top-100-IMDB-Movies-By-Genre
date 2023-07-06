@@ -5,7 +5,6 @@ export function movieModal(event, data) {
       modal.style.display = "block";
     }
   
-    // const modalContent = document.querySelector(".modal-content");
     const movieDetails = document.getElementById('movie-details');
     movieDetails.innerHTML = '';
   

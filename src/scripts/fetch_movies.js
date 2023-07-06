@@ -1,4 +1,3 @@
-
 export async function fetchMovies(arg) {
     const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
     const options = {
@@ -12,26 +11,20 @@ export async function fetchMovies(arg) {
     try {
         const response = await fetch(url, options);
         const result = await response.json();
-        // console.log(result)
-        let action_data = []
+        let action_data = [];
         
-
         result.forEach(ele => {
             if (ele["genre"].includes(arg)) {
                 let hash = {}
                 hash["title"] = ele["title"]
                 hash["rating"] = ele["rating"]
                 action_data.push(hash)
-            }
-            
-        })
-        // console.log(action_data)
-        return action_data 
-
-
+            };
+        });
+        return action_data;
     } catch (error) {
         console.error(error);
-    }
-}
+    };
+};
 
 
