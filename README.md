@@ -120,6 +120,7 @@ function createListItem(key, value, imgURL) {
 <ul>
     <li>Possibly include a search function</li>
     <li>Instead of just top 100 movies, include every movie in IMDB</li>
+    <li>Find the ratings of a movie also from Rotten Tomatoes and Metacritic. Then calculate the average rating using the three review sites</li>
     <li>Provide a trailer to the movies in the modal</li>
     <li>Provide links to streaming services where the user can watch that movie</li>
 <ul>
