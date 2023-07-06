@@ -6,11 +6,43 @@ The motivating factor for this data visualization is because I'm an avid movie e
 
 <h2>Functionality & MVPS</h2>
 
-<h3>In "Top 100 Movies By Genre", users will be able to:</h3>
+<h3>In "Top 100 IMDB Movies By Genre", users will be able to:</h3>
 
 <h4>Click on the genres to see a visual representation of each movie's rating through a horizontal bar chart</h4>
 
 ![Genres](src/assets/Genres.png)
+
+In order to obtain our data, we need to make a fetch request to the API and then format the result array into a new array with a key value pair of just the title and rating.
+```
+export async function fetchMovies(arg) {
+    const url = 'https://imdb-top-100-movies.p.rapidapi.com/';
+    const options = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': 'acd4d417f3msh22cbb2688691676p165cfcjsn3f566e20b85c',
+            'X-RapidAPI-Host': 'imdb-top-100-movies.p.rapidapi.com'
+        }
+    };
+
+    try {
+        const response = await fetch(url, options);
+        const result = await response.json();
+        let action_data = [];
+        
+        result.forEach(ele => {
+            if (ele["genre"].includes(arg)) {
+                let hash = {}
+                hash["title"] = ele["title"]
+                hash["rating"] = ele["rating"]
+                action_data.push(hash)
+            };
+        });
+        return action_data;
+    } catch (error) {
+        console.error(error);
+    };
+};
+```
 
 <h4>Click on each bar to view a modal that provides more information about that movie</h4>
 
@@ -22,10 +54,6 @@ In addition, this project will include:
     <li>My GitHub link</li>
     <li>A README</li>
 </ul>
-
-<h2>Wireframe</h2>
-
-![Screenshot 2023-05-04 232217](https://user-images.githubusercontent.com/126521511/236371400-36e5e508-2eca-4e63-b7f2-ec9ddf9e5284.png)
 
 <h2>Technologies, Libraries, APIs</h2>
 <ul>
