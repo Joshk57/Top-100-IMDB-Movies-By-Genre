@@ -13,17 +13,16 @@ export async function fetchInfo(data) {
         const result = await response.json();
 
         const movie = result.find(ele => ele.title === data.title); 
-        let info = []
+        let info = [];
         if (movie) {
             info.push(movie.image, movie.title, movie.year, movie.rating, movie.description, movie.trailer)
-            console.log(info)
-            return info
+            return info;
         } else {
           console.error('Movie not found');
           return null; 
-        }
+        };
 
     } catch (error) {
         console.error(error);
-    }
-}
+    };
+};

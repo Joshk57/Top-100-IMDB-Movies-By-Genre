@@ -34,8 +34,8 @@ export async function createGraph(data) {
   const container = document.getElementById("chartContainer");
   container.appendChild(svg.node());
 
-  const modal = document.getElementById("myModal")
-  const span = document.getElementsByClassName("close")[0]
+  const modal = document.getElementById("myModal");
+  const span = document.getElementsByClassName("close")[0];
 
   svg.append("g")
     .attr("fill", "teal")
@@ -62,11 +62,11 @@ export async function createGraph(data) {
   window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-    }
-  }
+    };
+  };
   span.onclick = function() {
     modal.style.display = "none";
-  }
+  };
 
   svg.append("g")
     .attr("fill", "white")
@@ -105,12 +105,11 @@ export async function createGraph(data) {
     .attr("x", width / 2)
     .attr("y", height - marginBottom / 2)
     .text(xAxisLabel)
-    .style("font-size", "16")
-
-}
+    .style("font-size", "16");
+};
 
 function clearGraph() {
     const svg = d3.select('svg');
     svg.remove();
-}
+};
 
