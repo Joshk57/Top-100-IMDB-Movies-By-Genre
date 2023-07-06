@@ -39,19 +39,9 @@ function createListItem(key, value, imgURL) {
     valueElement.textContent = value;
     listItem.appendChild(valueElement);
 
-    const imageElement = document.createElement('img');
-    imageElement.src = imgURL;
-    listItem.appendChild(imageElement);
+    const imgElement = document.createElement('img');
+    imgElement.src = imgURL;
+    listItem.appendChild(imgElement);
 
     return listItem;
 }
-  
-export function closeModal(event) {
-    const modal = document.querySelector(".modal");
-
-    if (event.target == modal) {
-        modal.style.display = "none";
-    };
-
-}
-
