@@ -8,10 +8,11 @@ The motivating factor for this data visualization is because I'm an avid movie e
 
 In "Top 100 Movies By Genre", users will be able to:
 <ul>
-    <li>See a visual representation of each movie's rating through a horizontal bar chart</li>
-    ![Screenshot]("C:\Users\Joshua Kim\Pictures\Screenshots\Screenshot 2023-07-06 093840.png")
-    <li>Click on the genres on the side menu to view the ratings of each movie</li>
+    <li>Click on the genres to see a visual representation of each movie's rating through a horizontal bar chart</li>
+    ![genres](src/assets/Genres.png)
+
     <li>Click on each bar to view a modal that provides more information about that movie</li>
+    ![modal](src/assets/Modal.png)
 </ul>
 
 In addition, this project will include:
