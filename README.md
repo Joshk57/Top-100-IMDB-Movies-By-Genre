@@ -99,13 +99,6 @@ function createListItem(key, value, imgURL) {
 }
 ```
 
-
-In addition, this project will include:
-<ul>
-    <li>My GitHub link</li>
-    <li>A README</li>
-</ul>
-
 <h2>Technologies, Libraries, APIs</h2>
 <ul>
     <li>D3.js</li>
@@ -114,14 +107,13 @@ In addition, this project will include:
 
 <h2>Implementation Timeline</h2>
 <ul>
-    <li>Thursday: Get comfortable with pulling data from my API and start pulling the data I need for my project
-    <li>Friday: Try to learn about how to use D3.js or Chart.js</li>
-    <li>Saturday and Sunday: Have all my data by now and then get my genre buttons to work</li> 
-    <li>Monday: Continue working on my being able to swap between genres and then start implementing my bar graphs<li>
-    <li>Tuesday: Continue implenting my bar graphs for each movie and make my bars interactive.
-    </li>
-    <li>Wednesday: Work on trying to make the project aesthetically pleasing</li>
-    <li>Thursday: Finish what I can and then deploy the project on GitHub</li>
+    <li>Thursday: Find the API that I want to use.</li>
+    <li>Friday: Start learning how to fetch and obtain the data from my API.</li>
+    <li>Saturday and Sunday: Learn how to use D3.js and be able to click on a button to start displaying my data in a bar graph.</li> 
+    <li>Monday: Continue to work on displaying data while also working on CSS<li>
+    <li>Tuesday: Fetch more information about a specific movie in order to display it in a modal.</li>
+    <li>Wednesday: Finish working on the modal and then continue to work on CSS.</li>
+    <li>Thursday: Finish what I can with styling and then deploy the project on GitHub.</li>
 </ul>
 
 <h2>Future Implementations</h2>
