@@ -119,6 +119,7 @@ function createListItem(key, value, imgURL) {
 <h2>Future Implementations</h2>
 <ul>
     <li>Possibly include a search function</li>
+    <li>Instead of just top 100 movies, include every movie in IMDB</li>
     <li>Provide a trailer to the movies in the modal</li>
     <li>Provide links to streaming services where the user can watch that movie</li>
 <ul>
