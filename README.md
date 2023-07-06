@@ -1,12 +1,15 @@
 <h2>Background</h1>
 
-My project will display the top 100 IMDB movies categorized by their genre. In each genre, a bar graph will display the ratings of each movie of that genre and the user will be able to click on a movie to learn more about that movie.
+Top 100 IMDB Movies By Genre is a data visualization of the top 100 IMDB movies categorized by their genre and then sorted by their rating. Users can click on a specific genre to view a horizontal bar chart that shows the movie's title and their rating. Users will also be able to click on a movie's bar rating to learn more about that movie.
+
+The motivating factor for this data visualization is because I'm an avid movie enjoyer and whenever I look for a movie to watch, I would always try to find the highest rated movies to watch. I figured why not just create a ranking of the top movies of my own and then be able to see what each movie is about when I click on the movie.
 
 <h2>Functionality & MVPS</h2>
 
 In "Top 100 Movies By Genre", users will be able to:
 <ul>
     <li>See a visual representation of each movie's rating through a horizontal bar chart</li>
+    ![Screenshot]("C:\Users\Joshua Kim\Pictures\Screenshots\Screenshot 2023-07-06 093840.png")
     <li>Click on the genres on the side menu to view the ratings of each movie</li>
     <li>Click on each bar to view a modal that provides more information about that movie</li>
 </ul>
