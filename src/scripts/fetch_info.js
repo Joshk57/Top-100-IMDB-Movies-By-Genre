@@ -19,7 +19,7 @@ export async function fetchInfo(data) {
             console.log(info)
             return info
         } else {
-          console.error('Movie not found in the result.');
+          console.error('Movie not found');
           return null; 
         }
 

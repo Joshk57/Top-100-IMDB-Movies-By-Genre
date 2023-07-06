@@ -86,7 +86,7 @@ export async function createGraph(data) {
 
   svg.append("g")
   .attr("transform", `translate(0,${marginTop})`)
-  .call(d3.axisTop(x).ticks(width / 80, ".0f")) // Format the tick values with no decimal places
+  .call(d3.axisTop(x).ticks(width / 80, ".0f"))
   .call(g => g.select(".domain").remove())
   .selectAll("text")
   .style("font-size", "18px")

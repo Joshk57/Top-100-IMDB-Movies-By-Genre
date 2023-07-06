@@ -170,14 +170,6 @@ html, body {
   background-color: orange !important;
 }
 
-.btn:visited {
-  background-color: orange !important;
-}
-
-.btn:active {
-  background-color: orange !important;
-}
-
 .x-axis-label, .y-axis-label {
   font-size: 45px;
   font-weight: bold;

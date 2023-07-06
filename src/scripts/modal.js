@@ -9,41 +9,38 @@ export function movieModal(event, data) {
     movieDetails.innerHTML = '';
   
     const detailsList = document.createElement('ul');
-  
-    const titleText = document.createElement('span')
-    titleText.textContent = 'Title'
-    titleText.style.color = 'blue'
 
-    const yearText = document.createElement('span')
-    yearText.textContent = 'Year'
+    const image = createListItem('Image', '', data[0]);
+    detailsList.appendChild(image);
 
-    const imageItem = createListItem('Image', '', data[0]);
-    const titleItem = createListItem(titleText.textContent, data[1]);
-    const yearItem = createListItem(yearText.textContent, data[2]);
-    const ratingItem = createListItem('Rating', data[3]);
-    const descriptionItem = createListItem('Description', data[4]);
+    const title = createListItem('Title', data[1]);
+    detailsList.appendChild(title);
 
-    detailsList.appendChild(imageItem)
-    detailsList.appendChild(titleItem);
-    detailsList.appendChild(yearItem);
-    detailsList.appendChild(ratingItem);
-    detailsList.appendChild(descriptionItem);
+    const year = createListItem('Year', data[2]);
+    detailsList.appendChild(year);
+
+    const rating = createListItem('Rating', data[3]);
+    detailsList.appendChild(rating);
+
+    const description = createListItem('Description', data[4]);
+    detailsList.appendChild(description);
 
     movieDetails.appendChild(detailsList);
   }
   
-function createListItem(label, value, imageURL) {
+function createListItem(key, value, imgURL) {
     const listItem = document.createElement('li');
+
     const labelElement = document.createElement('span');
-    const valueElement = document.createElement('span');
-    const imageElement = document.createElement('img');
-
-    labelElement.textContent = label + ': ';
-    valueElement.textContent = value;
-    imageElement.src = imageURL;
-
+    labelElement.textContent = key + ': ';
     listItem.appendChild(labelElement);
+
+    const valueElement = document.createElement('span');
+    valueElement.textContent = value;
     listItem.appendChild(valueElement);
+
+    const imageElement = document.createElement('img');
+    imageElement.src = imgURL;
     listItem.appendChild(imageElement);
 
     return listItem;
