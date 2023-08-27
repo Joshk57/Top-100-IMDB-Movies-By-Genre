@@ -10,7 +10,7 @@ export function movieModal(event, data) {
 
   const detailsList = document.createElement('ul');
 
-  const image = createListItem('Image', '', data[0]);
+  const image = createListItem('', '', data[0]);
   detailsList.appendChild(image);
 
   const title = createListItem('Title', data[1]);
@@ -22,10 +22,7 @@ export function movieModal(event, data) {
   const rating = createListItem('Rating', data[3]);
   detailsList.appendChild(rating);
 
-  const director = createListItem('Director', data[4]);
-  detailsList.appendChild(director);
-
-  const description = createListItem('Description', data[5]);
+  const description = createListItem('Description', data[4]);
   detailsList.appendChild(description);
 
   movieDetails.appendChild(detailsList);
@@ -34,18 +31,19 @@ export function movieModal(event, data) {
 function createListItem(key, value, imgURL) {
   const listItem = document.createElement('li');
 
-  const labelElement = document.createElement('span');
-  labelElement.textContent = key + ': ';
-  listItem.appendChild(labelElement);
-
-  const valueElement = document.createElement('span');
-  valueElement.textContent = value;
-  listItem.appendChild(valueElement);
-
   if (imgURL) {
-      const imgElement = document.createElement('img');
-      imgElement.src = imgURL;
-      listItem.appendChild(imgElement);
+    const imgElement = document.createElement('img');
+    imgElement.src = imgURL;
+    imgElement.classList.add('image');
+    listItem.appendChild(imgElement);
+  } else {
+    const labelElement = document.createElement('span');
+    labelElement.textContent = key + ': ';
+    listItem.appendChild(labelElement);
+
+    const valueElement = document.createElement('span');
+    valueElement.textContent = value;
+    listItem.appendChild(valueElement);
   }
 
   return listItem;

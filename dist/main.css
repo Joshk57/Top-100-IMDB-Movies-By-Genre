@@ -101,6 +101,11 @@ input[disabled] {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.image {
+  display: block;
+  margin: 0 auto;
+}
+
 html, body {
   background-color: rgb(27, 26, 26);
 }
