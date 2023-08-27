@@ -106,6 +106,12 @@ input[disabled] {
   margin: 0 auto;
 }
 
+.key {
+  font-size: 24px;
+  font-weight: bold;
+  color: orange;
+}
+
 html, body {
   background-color: rgb(27, 26, 26);
 }
