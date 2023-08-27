@@ -69,26 +69,29 @@ export async function createGraph(data) {
   };
 
   svg.append("g")
-    .attr("fill", "white")
-    .attr("text-anchor", "end")
-    .selectAll()
-    .data(data)
-    .join("text")
-    .attr("x", (d) => x(d.rating))
-    .attr("y", (d) => y(d.title) + y.bandwidth() / 2)
-    .attr("dy", "0.35em")
-    .attr("dx", -4)
-    .text((d) => format(d.rating))
-    .call((text) => text.filter(d => x(d.rating) - x(0) < 20) 
-      .attr("dx", +4)
-      .attr("fill", "black")
-      .attr("text-anchor", "start"));
+  .attr("fill", "white")
+  .attr("text-anchor", "end")
+  .selectAll()
+  .data(data)
+  .join("text")
+  .attr("x", (d) => x(d.rating))
+  .attr("y", (d) => y(d.title) + y.bandwidth() / 2)
+  .attr("dy", "0.35em")
+  .attr("dx", -4)
+  .style("font-family", "Arial, Helvetica, sans-serif") 
+  .style("font-size", "18px")   
+  .text((d) => format(d.rating))
+  .call((text) => text.filter(d => x(d.rating) - x(0) < 20) 
+    .attr("dx", +4)
+    .attr("fill", "black")
+    .attr("text-anchor", "start"));
 
   svg.append("g")
   .attr("transform", `translate(0,${marginTop})`)
   .call(d3.axisTop(x).ticks(width / 80, ".0f"))
   .call(g => g.select(".domain").remove())
   .selectAll("text")
+  .style("font-family", "Arial, Helvetica, sans-serif") 
   .style("font-size", "18px")
   .style("fill", "white");
 
@@ -96,6 +99,7 @@ export async function createGraph(data) {
     .attr("transform", `translate(${marginLeft},0)`)
     .call(d3.axisLeft(y).tickSizeOuter(0))
     .selectAll("text") 
+    .style("font-family", "Arial, Helvetica, sans-serif") 
     .style("font-size", "18px") 
     .style("fill", "white"); 
 
